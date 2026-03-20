@@ -28,7 +28,10 @@ import { AppStats, Church, DiffResult } from './core/models';
   ],
   template: `
     <div class="app-shell">
-      <app-header (search)="onSearch($event)" (notifClick)="selectedTabIndex = 1" />
+      <app-header (search)="onSearch($event)"
+                  (notifClick)="selectedTabIndex = 1"
+                  (churchFocus)="onChurchSelect($event)"
+                  [churches]="churches()" />
 
       @if (stats()) {
         <app-stats-bar [stats]="stats()" />
