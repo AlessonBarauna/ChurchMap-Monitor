@@ -1,0 +1,23 @@
+# ─── .NET ─────────────────────────────────────────────────────────────────────
+**/bin/
+**/obj/
+**/*.user
+**/*.suo
+**/.vs/
+**/appsettings.Development.json
+**/churchmap.db
+**/churchmap.db-shm
+**/churchmap.db-wal
+
+# ─── Angular / Node ───────────────────────────────────────────────────────────
+**/node_modules/
+**/dist/
+**/.angular/
+**/.cache/
+**/npm-debug.log*
+**/yarn-error.log*
+
+# ─── OS ───────────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
